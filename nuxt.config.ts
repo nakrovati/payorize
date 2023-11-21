@@ -2,4 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/supabase", "@nuxt/ui"],
+  supabase: {
+    redirect: false,
+  },
+  vue: {
+    defineModel: true,
+    propsDestructure: true,
+  },
 });
