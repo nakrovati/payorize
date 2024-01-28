@@ -1,11 +1,13 @@
 <template>
   <div>
-    <TheHeader></TheHeader>
+    <div class="flex flex-col min-h-dvh">
+      <TheHeader></TheHeader>
 
-    <UDivider></UDivider>
+      <main class="flex-1">
+        <slot />
+      </main>
+    </div>
 
-    <main>
-      <slot />
-    </main>
+    <TheFooter></TheFooter>
   </div>
 </template>

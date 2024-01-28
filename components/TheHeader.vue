@@ -23,8 +23,8 @@ const items = [
 </script>
 
 <template>
-  <header class="py-4">
-    <UContainer class="flex flex-row justify-between items-center">
+  <header>
+    <UContainer class="py-4 flex flex-row justify-between items-center">
       <div v-if="route.path === '/'">Home</div>
       <NuxtLink v-else to="/">Home</NuxtLink>
 
@@ -37,5 +37,7 @@ const items = [
       ></UDropdown>
       <UButton v-else to="/login">Login</UButton>
     </UContainer>
+
+    <UDivider></UDivider>
   </header>
 </template>
