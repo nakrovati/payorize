@@ -12,8 +12,8 @@
     "lint": "eslint ."
   },
   "devDependencies": {
+    "@nuxt/eslint-config": "^0.2.0",
     "@nuxt/ui": "^2.11.3",
-    "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/supabase": "^1.1.5",
     "@vercel/analytics": "^1.1.1",
     "eslint": "^8.56.0",
