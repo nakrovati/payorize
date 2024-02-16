@@ -5,17 +5,7 @@ module.exports = {
     "plugin:unicorn/recommended",
     "prettier",
   ],
-  overrides: [
-    {
-      files: ["components/**/*.{ts,vue}"],
-      rules: {
-        "unicorn/filename-case": [
-          "error",
-          {
-            case: "pascalCase",
-          },
-        ],
-      },
-    },
-  ],
+  rules: {
+    "unicorn/filename-case": "off",
+  },
 };
