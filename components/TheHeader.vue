@@ -28,14 +28,17 @@ const items = [
       <div v-if="route.path === '/'">Home</div>
       <NuxtLink v-else to="/">Home</NuxtLink>
 
-      <UDropdown
-        v-if="user"
-        :items="items"
-        :popper="{ placement: 'bottom-start' }"
-      >
-        <UAvatar alt="avatar"></UAvatar
-      ></UDropdown>
-      <UButton v-else to="/login">Login</UButton>
+      <div class="flex gap-2">
+        <TheColorModeToggleButton></TheColorModeToggleButton>
+        <UDropdown
+          v-if="user"
+          :items="items"
+          :popper="{ placement: 'bottom-start' }"
+        >
+          <UAvatar alt="avatar"></UAvatar>
+        </UDropdown>
+        <UButton v-else to="/login">Login</UButton>
+      </div>
     </UContainer>
 
     <UDivider></UDivider>
