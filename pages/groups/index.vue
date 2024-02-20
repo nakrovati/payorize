@@ -18,7 +18,7 @@ const { data: groups, refresh } = await useAsyncData("groups", async () => {
 </script>
 
 <template>
-  <div class="mt-4 flex flex-col gap-4">
+  <div class="flex flex-col gap-4">
     <h1 class="font-semibold text-2xl">Groups</h1>
 
     <ul v-if="groups" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">

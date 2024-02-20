@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <UContainer>
+    <UContainer :ui="{ padding: 'py-4', base: 'max-w-4xl' }">
       <NuxtPage />
     </UContainer>
 
