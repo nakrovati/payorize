@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { FormSubmitEvent } from "#ui/types";
 import { string, objectAsync, minLength, type Input, maxLength } from "valibot";
-import type { Database } from "~/types/database.types";
+import type { Database } from "~/types/supabase";
 
 const isModalOpen = defineModel<boolean>();
 
